@@ -1,3 +1,13 @@
 {
-  "rewrites": [{ "source": "/v1/(.*)", "destination": "/v1" }]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/v1/(.*)", // Rute yang sesuai dengan "/v1/..."
+      "dest": "/$1"      // Diarahkan ke rute tanpa "/v1"
+    },
+    {
+      "src": "/(.*)",    // Rute untuk permintaan yang tidak cocok dengan "/v1/..."
+      "dest": "/$1"      // Diarahkan ke rute tanpa perubahan
+    }
+  ]
 }
