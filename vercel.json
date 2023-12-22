@@ -2,12 +2,12 @@
   "version": 2,
   "routes": [
     {
-      "src": "/v1/(.*)", // Rute yang sesuai dengan "/v1/..."
-      "dest": "/$1"      // Diarahkan ke rute tanpa "/v1"
+      "src": "/v1/(.*)", 
+      "dest": "/$1"      
     },
     {
-      "src": "/(.*)",    // Rute untuk permintaan yang tidak cocok dengan "/v1/..."
-      "dest": "/$1"      // Diarahkan ke rute tanpa perubahan
+      "src": "/(.*)",    
+      "dest": "/$1"      
     }
   ]
 }
